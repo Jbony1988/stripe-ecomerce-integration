@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe Payment Integration</title>
+    <link rel="stylesheet" href="./custom.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Form</h1>
+        <form id="payment-form">
+            <div id="card-element"><!-- A Stripe Element will be inserted here. --></div>
+            <button id="submit">Pay Now</button>
+            <div id="payment-result"></div>
+        </form>
+    </div>
+    <script>
+        var stripe = Stripe('pk_test_51MMhj4JX9pVYcKSo1723htdL74D90A7NKA9nDDrLVFfv3vI38649n8YLUUUy4qnH8FtWVDctUff3hQTz2VP0DH3T00jTEzgJL5');
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>
